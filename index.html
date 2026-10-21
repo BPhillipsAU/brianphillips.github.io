@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian Phillips | Senior Project Manager</title>
+    <style>
+        /* Base Reset and Fonts */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #0b0f19;
+            background-image: linear-gradient(rgba(11, 15, 25, 0.85), rgba(11, 15, 25, 0.95)), url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2000&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Glassmorphism Card Container */
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 50px 40px;
+            max-width: 650px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Profile Picture */
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px auto;
+            border: 4px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            display: block;
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+            letter-spacing: -0.5px;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: #48cae4;
+            margin-bottom: 5px;
+        }
+
+        h2:nth-of-type(2) {
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+            color: #9ca3af;
+        }
+
+        p.summary {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #d1d5db;
+            margin-bottom: 40px;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        /* Contact Form Styles */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input, textarea {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #ffffff;
+            padding: 14px;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #48cae4;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        button {
+            background: linear-gradient(135deg, #0077b6, #00b4d8);
+            color: #ffffff;
+            border: none;
+            padding: 16px;
+            border-radius: 8px;
+            font-size: 1.05rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+            box-shadow: 0 4px 15px rgba(0, 180, 216, 0.3);
+        }
+
+        button:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+        }
+
+        button:active {
+            transform: translateY(1px);
+        }
+
+        .form-footer {
+            margin-top: 15px;
+            font-size: 0.8rem;
+            color: #9ca3af;
+        }
+
+        /* Social Icon Styles */
+        .social-links {
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .social-links a {
+            color: #9ca3af;
+            transition: color 0.3s ease, transform 0.2s ease;
+            display: inline-block;
+        }
+
+        .social-links a:hover {
+            color: #48cae4;
+            transform: translateY(-2px);
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 480px) {
+            .card {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2.2rem;
+            }
+            .profile-pic {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <!-- Profile Picture Added Here -->
+        <img src="BrianPhillips.jpg" alt="Brian Phillips" class="profile-pic">
+        
+        <h1>Brian Phillips</h1>
+        <h2>Senior Project Manager | Delivering Complex Telecommunications Infrastructure & Large-Scale Migrations </h2>
+        <h2>PRINCE2 Agile • ITIL • MEng</h2>
+        
+        <p class="summary">
+            I am a Senior Project Manager with over 15 years of professional experience, including a decade specialising in enterprise IT and telecommunications. I direct large-scale network changes, IT system migrations, and complex customer transitions from initial scoping through to final execution. Combining my engineering background with strong commercial discipline, I drive change enablement and actively mitigate the operational impact of new deployments. Throughout every transition, my core focus remains on guiding the customer, holding vendors accountable, and delivering clear, data-driven reporting to executive stakeholders.
+        </p>
+
+        <h3>Contact Me</h3>
+        
+        <!-- Web3Forms Integration -->
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="14406c6c-31e6-4bb0-805d-91d48a32933d">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Message (How can I help you?)" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="form-footer">
+            Sends directly to contact@brianphillips.au
+        </div>
+
+        <!-- Social Links -->
+        <div class="social-links">
+            <a href="http://www.linkedin.com/in/bphillipsau" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <!-- Inline SVG for zero dependencies -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
